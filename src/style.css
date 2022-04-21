@@ -1,0 +1,196 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    height: 100%;
+}
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header,footer
+{
+    background-color: #f8f7ee;
+}
+
+header
+{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links-div
+{
+    width: 70%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Style tab links */
+.tablink 
+{
+    all: unset;
+    cursor: pointer;
+    width: auto;
+    padding: 1px 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #242021;
+    transition: all .1s ease;
+}
+.tablink:hover
+{
+    border-bottom: 2px solid #242021;
+}
+
+#content
+{
+    width: 100%;
+    min-height: 100%;
+}
+/* Style the tab content (and add height:100% for full page content) */
+
+.tablink, 
+.homeTxt h1,
+#Menu h1,
+#Menu article h2,
+.foodItem h3,
+#Contact h1
+{
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+#Menu p
+{
+    font-family: 'Bellefair', serif;
+}
+#Home
+{
+    height: 100vh;
+    background-image: url('./images/FatChoy_hbg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeTxt
+{
+    max-width: 40%;
+    /* background-color: aqua; */
+    text-align: center;
+    letter-spacing: .05rem;
+    line-height: 1.5rem;
+    margin-top: 150px;
+}
+.homeTxt h1, p
+{
+    color: #242021;
+}
+.homeTxt h1
+{
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 20px;
+}
+.homeTxt button
+{
+    all: unset;
+    cursor: pointer;
+    width: 140px;
+    padding: 16px 26px;
+    border-radius: 300px;
+    background-color: #242021;
+    color: #fdfcfa;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    transition: all .2s ease-in;
+}
+.homeTxt button:hover
+{
+    opacity: .7;
+}
+.homeTxt p
+{
+    font-family: 'Bellefair', serif;
+    font-size: 1.7rem;
+}
+
+#Menu 
+{
+    background-color: rgb(245, 248, 245);
+}
+#Menu h1,
+.openDays
+{
+    text-align: center;
+}
+.openDays p
+{
+    font-size: 1.4rem;
+}
+#Menu h1
+{
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 30px 0;
+}
+.openDays
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+.dishesCont
+{
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border: 1px solid gold;
+}
+#Menu article
+{
+    width: 25%;
+    height: 100%;
+    border: 1px solid rebeccapurple;
+    text-align: center;
+
+    font-size: 2rem;
+}
+#Contact {background-color: blue;}
+footer
+{
+    background-color: aqua;
+    flex-basis: 5vh;
+    margin-top: auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Bellefair', serif;
+    font-size: 1.2rem;
+}
