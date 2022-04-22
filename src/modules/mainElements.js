@@ -32,12 +32,12 @@ let setHeader = () => {
     getBody.insertBefore(headerTag, getContentDiv);
 }
 
-let setFooter = () => {
-    const footerTag = document.createElement('footer');
+// let setFooter = () => {
+//     const footerTag = document.createElement('footer');
 
-    footerTag.innerHTML = ` &#128420; Replicated by M_Idi &#128420;`;
+//     footerTag.innerHTML = ` &#128420; Replicated by M_Idi &#128420;`;
 
-    getBody.append(footerTag);
-}
+//     getBody.append(footerTag);
+// }
 
-export {setHeader, setFooter};
+export {setHeader};

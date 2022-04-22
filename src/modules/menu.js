@@ -40,17 +40,17 @@ let sides = [
 
 let drinks = [
     {
-        name:'coca cola',
+        name:'Coca-Cola',
         pic:'',
         price:'3$'
     },
     {
-        name:'hot cocoa',
+        name:'Hot Cocoa',
         pic:'',
         price:'3$'
     },
     {
-        name:'berry karkade',
+        name:'Berry Karkade',
         pic:'',
         price:'3.75$'
     },
