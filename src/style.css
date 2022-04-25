@@ -13,6 +13,7 @@ body
 {
     min-height: 100vh;
     background-image: url('./images/FatChoy_hbg.png');
+    background-position: top center;
     display: flex;
     flex-direction: column;
 }
@@ -87,7 +88,7 @@ header
 .homeTxt,
 #Contact article
 {
-    max-width: 46%;
+    max-width: 50%;
     text-align: center;
     letter-spacing: .05rem;
     line-height: 1.5rem;
