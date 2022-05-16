@@ -1,36 +1,35 @@
-import theLogo from '../images/FatChoy_Logo.png'
+import theLogo from "../images/FatChoy_Logo.png";
 
-const getBody = document.querySelector('body');
-const getContentDiv = document.getElementById('content');
+const getBody = document.querySelector("body");
+const getContentDiv = document.getElementById("content");
 
 let setHeader = () => {
-    let tabButt = ['Home', 'Menu', 'Contact'];
-    const headerTag = document.createElement('header');
-    const headerLinks = document.createElement('div');
-    const logoArea = document.createElement('a');
-    const logoImgLink = document.createElement('img');
+  let tabButt = ["Home", "Menu", "Contact"];
+  const headerTag = document.createElement("header");
+  const headerLinks = document.createElement("div");
+  const logoArea = document.createElement("a");
+  const logoImgLink = document.createElement("img");
 
-    logoArea.setAttribute('href','index.html');
-    logoImgLink.setAttribute('src', theLogo);
+  logoArea.setAttribute("href", "index.html");
+  logoImgLink.setAttribute("src", theLogo);
 
-    headerLinks.classList.add('links-div');
+  headerLinks.classList.add("links-div");
 
-    logoArea.append(logoImgLink);
+  logoArea.append(logoImgLink);
 
-    headerTag.append(logoArea);
+  headerTag.append(logoArea);
 
+  tabButt.forEach((butt) => {
+    let button = document.createElement("button");
+    button.classList.add("tablink");
+    button.innerHTML = butt;
 
-    tabButt.forEach((butt) => {
-        let button = document.createElement('button');
-        button.classList.add('tablink');
-        button.innerHTML = butt;
+    headerLinks.appendChild(button);
+  });
 
-        headerLinks.appendChild(button);
-    })
-
-    headerTag.append(headerLinks);
-    getBody.insertBefore(headerTag, getContentDiv);
-}
+  headerTag.append(headerLinks);
+  getBody.insertBefore(headerTag, getContentDiv);
+};
 
 // let setFooter = () => {
 //     const footerTag = document.createElement('footer');
@@ -40,4 +39,4 @@ let setHeader = () => {
 //     getBody.append(footerTag);
 // }
 
-export {setHeader};
+export { setHeader };
